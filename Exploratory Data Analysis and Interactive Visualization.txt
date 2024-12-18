@@ -1,0 +1,4 @@
+import plotly.express as px
+
+fig = px.histogram(df, x="sales", title="Sales Distribution")
+fig.show()

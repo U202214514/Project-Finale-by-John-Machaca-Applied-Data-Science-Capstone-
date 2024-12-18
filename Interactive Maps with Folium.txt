@@ -1,0 +1,8 @@
+import folium
+
+# Create base map
+map = folium.Map(location=[19.432608, -99.133209], zoom_start=6)
+
+# Add marker
+folium.Marker([19.432608, -99.133209], popup="High sales").add_to(map)
+map.save("sales_map.html")
